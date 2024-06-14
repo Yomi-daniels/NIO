@@ -1,0 +1,16 @@
+@font-face {
+  font-family: font-light;
+  src: url(/fonts/HelveticaNeueLight.otf);
+}
+@font-face {
+  font-family: font-black;
+  src: url(/fonts/HelveticaNeueBlack.otf);
+}
+@font-face {
+  font-family: font-medium;
+  src: url(/fonts/HelveticaNeueMedium.otf);
+}
+@font-face {
+  font-family: font-ultralight;
+  src: url(/fonts/HelveticaNeueUltraLight.otf);
+}
