@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/NIO.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.0.0/remixicon.css"
+      integrity="sha512-c56hC7MXksQKbIjwJlCijVIMqfENEBRz5J+5t3cgAUUgcTZ9PItCcTxikzqnx2Q/66f6/2169r7IAJBCHtSftg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>NIO</title>
+  </head>
+  <body>
+    <section class="header-section">
+      <img
+        src="assets/images/top-hero-desktop.jpg"
+        alt="background"
+        class="w-full h-[100vh] bg-black object-cover max-[650px]:object-right-top max-[900px]:hidden"
+      />
+      <img
+        src="assets/images/top-hero-mobile.jpg"
+        alt="mobile-hero-img"
+        class="hidden max-[900px]:block h-[100dvh] w-full object-cover"
+      />
+      <header
+        class="fixed top-0 w-full px-12 py-7 z-50 cursor-pointer hover:h-[70px] hover:ease-in-out hover:duration-300"
+        style="padding: 1rem 2rem"
+      >
+        <div
+          class="header-container w-full relative flex items-center justify-between font-PrimaryFont my-0 mx-auto"
+        >
+          <nav class="w-full">
+            <ul
+              class="font-PrimaryFont items-center gap-7 text-white text-xs flex max-[1029px]:hidden"
+            >
+              <li>
+                <a href="/" class="hover:text-navHover relative">We are NIO</a>
+              </li>
+              <li><a href="/" class="hover:text-cyan-300">Models</a></li>
+              <li>
+                <a href="/" class="hover:text-cyan-300">Beyond the Car</a>
+              </li>
+            </ul>
+            <i
+              class="ri-menu-line hidden text-white max-[1029px]:flex left-4 top-0 absolute"
+            ></i>
+          </nav>
+          <div class="nav-logo w-full">
+            <img
+              src="assets/images/nio-logo-white.svg"
+              alt="nav-logo"
+              class="w-[20px] cursor-pointer"
+            />
+          </div>
+          <div
+            class="global-container text-white flex underline gap-7 text-xs absolute right-4"
+          >
+            <a href="#" class="max-sm:hidden">
+              <i class="ri-global-line text-white max-sm:no-underline"></i>
+              <a href="/" class="max-sm:hidden font-PrimaryFont">Language</a>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="header-text">
+        <img
+          src="assets/images/Hero header.png"
+          alt="hero header"
+          class="w-[200px] absolute top-[14%] left-[44%] max-[1284px]:left-[42%] max-[887px]:left-[40%] max-[722px]:left-[38%] max-[595px]:left-[34%] max-[444px]:left-[32%] max-[306px]:left-[20%] max-[320px]:left-[20%]"
+        />
+
+        <button
+          class="header-button absolute bottom-[14%] left-[45.5%] max-[1284px]:left-[42%] max-[887px]:left-[40%] max-[722px]:left-[38%] max-[595px]:left-[39%] max-[444px]:left-[37%] text-white border-2 border-white px-7 py-2.5 text-[1rem] hover:bg-white hover:text-black transition-all max-md:text-sm max-sm:px-4 max-sm:py-2"
+        >
+          Watch Video
+        </button>
+      </div>
+    </section>
+    <section class="section-2 w-full relative h-full">
+      <img
+        src="assets/images/design-spirit-hero-desktop.jpg"
+        alt="section-image"
+        class="w-full max-[900px]:hidden"
+      />
+      <img
+        src="assets/images/design-spirit-hero-mobile.jpg"
+        alt="section-image"
+        class="hidden max-[900px]:block h-[100dvh] w-full object-cover"
+      />
+      <div
+        class="section-2-text absolute bottom-[10%] left-[18%] flex flex-col text-start max-sm:text-center max-md:left-[13%] max-[320px]:left-[6%]"
+      >
+        <p
+          class="text-white text-2xl font-light tracking-widest max-sm:text-sm"
+        >
+          Exterior
+        </p>
+        <p class="text-white text-7xl max-md:text-4xl max-sm:text-2xl">
+          A brand new agile posture, <br />
+          with a captivating charm.
+        </p>
+      </div>
+    </section>
+    <section
+      class="section-3 max-w-full h-full relative pt-[3rem] px-32 max-md:px-12 max-sm:px-2 bg-creamBg py-[4rem]"
+    >
+      <div
+        class="section-3-container max-w-[1300px] h-full my-0 mx-auto max-md:custom-padding max-md:px-[1rem]"
+      >
+        <div
+          class="video-wrapper relative h-[500px] max-md:w-[100%] max-md:h-[300px] border-2"
+        >
+          <video
+            autoplay
+            loop
+            class="object-cover absolute max-h-[100%] min-h-full min-w-full block max-sm:bg-center max-md:object-cover max-md:h-[100%]"
+            id="Video1"
+          >
+            <source src="assets/videos/video 1.mp4" type="video/mp4" />
+          </video>
+          <video
+            autoplay
+            loop
+            class="object-cover absolute h-full min-w-full hidden"
+            id="Video2"
+          >
+            <source src="assets/videos/video 2.mp4" type="video/mp4" />
+          </video>
+          <video
+            autoplay
+            loop
+            class="object-cover absolute h-full min-w-full hidden"
+            id="Video3"
+          >
+            <source src="assets/videos/video 3.mp4" type="video/mp4" />
+          </video>
+          <video
+            autoplay
+            loop
+            class="object-cover absolute h-full min-w-full hidden"
+            id="Video4"
+          >
+            <source src="assets/videos/video 4.mp4" type="video/mp4" />
+          </video>
+          <video
+            autoplay
+            loop
+            class="object-cover absolute h-full min-w-full hidden"
+            id="Video5"
+          >
+            <source src="assets/videos/video 5.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          class="video-handler-container flex flex-wrap justify-between border-b border-gray-600 mt-7 text-GreyText max-[90%] my-0 mx-auto relative gap-5 align-center text-center max-sm:mt-0"
+        >
+          <button
+            class="border-b border-black py-4 px-7 text-black"
+            id="button1"
+          >
+            Sleek Coupe Stance
+          </button>
+          <button id="button2">Distinctive Front Fascia</button>
+          <button id="button3">Elegant Lines</button>
+          <button id="button4">Dual-Mode Active Spoiler</button>
+          <button id="button5">Effortless Grace</button>
+        </div>
+        <p
+          class="video-text my-0 mx-auto mt-8 text-GreyText text-xl text-center max-w-[70ch] md:text-xl font-light max-sm:text-[1rem]"
+        >
+          With its wide body, extended wheelbase, and visually imposing low
+          profile, EC6 displays an captivating sense of motion. Its harmonious
+          combination of sculpted surfaces and muscular broad shoulders
+          showcases a stunning and powerful aesthetic.
+        </p>
+      </div>
+    </section>
+    <section class="section-4 w-full h-full relative mt-[5rem]">
+      <div
+        class="section-4-container max-w-[1200px] h-full my-0 mx-auto custom-padding"
+      >
+        <div
+          class="section-4-texts max-w-[1100px] my-0 mx-auto flex align-center justify-between flex-wrap max-md:gap-4 max-md:justify-center max-md:text-center"
+        >
+          <h5 class="font-bold text-xl">Express Yourself in Color</h5>
+          <p class="text-[1rem] font-semibold max-sm:font-light lg:max-w-[40%]">
+            9 exterior colors inspired by the different skies worldwide,
+            including a color exclusive to EC6, AR Lavender.
+          </p>
+        </div>
+        <div
+          class="car-selector-container flex flex-col max-md:flex-col-reverse items-end gap-[6rem] mt-[4rem] max-md:items-center"
+        >
+          <div
+            class="color-button flex gap-4 items-center flex-wrap justify-center max-md:px-4 max-sm:justify-start"
+          >
+            <div
+              class="round w-[30px] h-[30px] rounded-full bg-Round1 cursor-pointer relative"
+            ></div>
+            <div
+              class="round w-[30px] h-[30px] rounded-full bg-Round2 cursor-pointer relative"
+            ></div>
+            <div
+              class="round w-[30px] h-[30px] rounded-full bg-Round3 cursor-pointer relative"
+            ></div>
+            <div
+              class="round w-[30px] h-[30px] rounded-full bg-Round4 cursor-pointer relative"
+            ></div>
+            <div
+              class="round w-[30px] h-[30px] rounded-full bg-Round5 cursor-pointer relative"
+            ></div>
+            <div
+              class="round w-[30px] h-[30px] rounded-full bg-Round6 cursor-pointer relative"
+            ></div>
+            <div
+              class="round w-[30px] h-[30px] rounded-full bg-Round7 cursor-pointer relative"
+            ></div>
+            <div
+              class="round w-[30px] h-[30px] rounded-full bg-Round8 cursor-pointer relative"
+            ></div>
+            <div
+              class="round w-[30px] h-[30px] rounded-full bg-Round9 border-2 border-gray-200 cursor-pointer relative"
+            ></div>
+          </div>
+
+          <div class="vehicles-selected-container relative w-full">
+            <div
+              class="vehicle-content w-full h-full flex flex-col bg-Round1 py-[2rem]"
+            >
+              <img
+                src="assets/images/vehicle1.png"
+                alt="vehicle"
+                class="w-full max-md:h-[300px] object-contain"
+              />
+              <p
+                class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] max-md:text-center"
+              >
+                AR Lavender
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="button-content my-0 mx-auto flex flex-col gap-6 justify-center items-center mt-[5rem]"
+        >
+          <p>More EC6 Moments</p>
+          <button
+            class="header-button text-black border-2 border-black px-4 py-2 text-[1rem] hover:bg-black hover:text-white transition-all max-md:text-sm max-sm:px-4 max-sm:py-2"
+          >
+            Check Gallery
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section-5 w-full h-full mt-[5rem] relative">
+      <div class="section-5-container">
+        <img
+          src="assets/images/interior-intro-hero-desktop.jpg"
+          alt="section-5-image"
+          class="w-full max-[900px]:hidden"
+        />
+        <img
+          src="assets/images/interior-intro-hero-mobile.jpg"
+          alt="section-5-image"
+          class="hidden max-[900px]:block h-[100dvh] w-full object-cover"
+        />
+        <div
+          class="top-text-content text-center absolute top-[10%] left-[19%] text-white flex flex-col gap-[3em] max-sm:gap-[1rem] items-center max-[900px]:left-2"
+        >
+          <h3 class="text-4xl font-light max-sm:text-[1.2rem]">
+            1.77㎡ Expansive Panoramic Glass Roof
+          </h3>
+          <p class="font-light text-[1rem]">
+            Immerse yourself in a world of breathtaking beauty with the
+            extra-large panoramic glass roof, revealing the mesmerizing
+            spectacle of sunrise, <br />
+            the lingering hues of sunset and the enchanting expanse of the
+            starlit sky, all perfectly framed before your eyes.
+          </p>
+          <button
+            class="header-button text-white border-2 border-white px-7 py-2.5 text-[1rem] hover:bg-white hover:text-black transition-all max-md:text-sm max-sm:px-4 max-sm:py-2"
+          >
+            Panoramic Glass Roof
+          </button>
+        </div>
+        <div
+          class="below-text-content absolute bottom-[5%] left-[10%] text-white leading-6 max-sm:left-[15%] max-sm:text-center"
+        >
+          <p
+            class="text-white text-1xl font-light tracking-widest max-sm:text-[1.1rem] max-sm:tracking-wide"
+          >
+            Interior
+          </p>
+          <p
+            class="text-white text-7xl max-md:text-4xl max-sm:text-2xl font-light"
+          >
+            Spacious Transparency, <br />
+            Where Inspiration Unfolds.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-6 max-w-full h-full relative mt-[5rem]">
+      <div
+        class="section-6-container w-[1200px] h-full my-0 mx-auto max-md:w-[100%]"
+      >
+        <div
+          class="section-6-texts max-w-[1100px] my-0 mx-auto flex align-center justify-between flex-wrap max-md:gap-4 max-md:text-center max-md:justify-center"
+        >
+          <h5 class="font-bold text-xl">Express Yourself in Color</h5>
+          <p class="text-[1rem] font-semibold max-sm:font-light">
+            9 exterior colors inspired by the different skies <br />
+            worldwide, including a color exclusive to EC6, AR <br />
+            Lavender.
+          </p>
+        </div>
+        <div
+          class="car-selector-container flex flex-col items-end gap-[6rem] mt-[4rem] max-md:items-center"
+        >
+          <div class="color-button-2 flex gap-4 items-center">
+            <div
+              class="round-2 w-[30px] h-[30px] rounded-full bg-Round1 cursor-pointer relative"
+            ></div>
+            <div
+              class="round-2 w-[30px] h-[30px] rounded-full bg-Round2 cursor-pointer relative"
+            ></div>
+            <div
+              class="round-2 w-[30px] h-[30px] rounded-full bg-Round3 cursor-pointer relative"
+            ></div>
+            <div
+              class="round-2 w-[30px] h-[30px] rounded-full bg-Round4 cursor-pointer relative"
+            ></div>
+          </div>
+
+          <div class="vehicles-selected-container">
+            <div
+              class="vehicle-content w-full h-full flex flex-col py-[2rem] custom-padding"
+            >
+              <img
+                src="assets/images/interior-colors-stream-blue-desktop.jpg"
+                alt="vehicle"
+                class="max-md:hidden"
+              />
+              <img
+                src="assets/images/interior-colors-stream-blue-mobile.jpg"
+                alt=""
+                class="max-md:block hidden"
+              />
+              <div
+                class="vehicle-selected-text custom-absolute flex flex-col gap-4 max-md:left-[30%] max-sm:items-center"
+              >
+                <p class="text-white text-[1rem] font-light">Stream Blue</p>
+                <button
+                  class="bg-white py-1 px-2 hover:bg-black hover:text-white transition ease-out text-sm flex gap-2 items-center"
+                >
+                  Explore Materials
+                  <i class="ri-add-circle-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-7 w-full h-[100vh] bg-creamBg mt-[8rem]">
+      <div class="section-7-container">
+        <img src="" alt="" class="pagination-container" />
+      </div>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
