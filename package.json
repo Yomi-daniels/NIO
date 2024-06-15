@@ -1,14 +1,18 @@
 {
+  "homepage": "https://yomi-daniels.github.io/NIO-EC6",
   "name": "nio-project",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "watch": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "watch": "npx tailwindcss -i ./input.css -o ./output.css --watch",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.4"
   },
   "dependencies": {
