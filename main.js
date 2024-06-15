@@ -71,25 +71,25 @@ buttons.forEach((button, index) => {
   });
 });
 
-const observerOptions = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0.5,
-};
+// const observerOptions = {
+//   root: null,
+//   rootMargin: "0px",
+//   threshold: 0.5,
+// };
 
-const observerCallback = (entries, observer) => {
-  entries.forEach((entry) => {
-    const video = entry.target.querySelector("video");
-    if (entry.isIntersecting) {
-      video.play();
-    } else {
-      video.pause();
-    }
-  });
-};
+// const observerCallback = (entries, observer) => {
+//   entries.forEach((entry) => {
+//     const video = entry.target.querySelector("video");
+//     if (entry.isIntersecting) {
+//       video.play();
+//     } else {
+//       video.pause();
+//     }
+//   });
+// };
 
-const observer = new IntersectionObserver(observerCallback, observerOptions);
+// const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-videoContainers.forEach((videoContainer) => {
-  observer.observe(videoContainer);
-});
+// videoContainers.forEach((videoContainer) => {
+//   observer.observe(videoContainer);
+// });
