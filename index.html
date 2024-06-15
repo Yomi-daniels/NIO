@@ -16,6 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.0.0/remixicon.css"
@@ -86,7 +88,7 @@
         />
 
         <button
-          class="header-button absolute bottom-[14%] left-[45.5%] max-[1284px]:left-[42%] max-[887px]:left-[40%] max-[722px]:left-[38%] max-[595px]:left-[39%] max-[444px]:left-[37%] text-white border-2 border-white px-7 py-2.5 text-[1rem] hover:bg-white hover:text-black transition-all max-md:text-sm max-sm:px-4 max-sm:py-2"
+          class="header-button absolute bottom-[14%] left-[45.5%] max-[1284px]:left-[42%] max-[887px]:left-[40%] max-[722px]:left-[38%] max-[595px]:left-[39%] max-[444px]:left-[37%] text-white border-[1px] border-white px-7 py-2.5 text-[1rem] hover:bg-white hover:text-black transition-all max-md:text-sm max-sm:px-4 max-sm:py-2"
         >
           Watch Video
         </button>
@@ -124,64 +126,62 @@
         class="section-3-container max-w-[1300px] h-full my-0 mx-auto max-md:custom-padding max-md:px-[1rem]"
       >
         <div
-          class="video-wrapper relative h-[600px] max-md:w-[100%] max-md:h-[300px] border-2"
+          class="video-wrapper relative h-[600px] max-md:w-[100%] max-md:h-[300px] border-[1px]"
         >
-          <video
-            autoplay
-            loop
-            class="object-cover absolute max-h-[100%] min-h-full min-w-full block max-md:h-[100%]"
-            id="Video1"
-          >
-            <source
-              src="src/assets/videos/video 1.mp4"
-              type="video/mp4"
-              class="max-md:hidden"
-            />
-          </video>
-
-          <video
-            autoplay
-            loop
-            class="object-cover absolute h-full min-w-full hidden"
-            id="Video2"
-          >
-            <source src="src/assets/videos/video 2.mp4" type="video/mp4" />
-          </video>
-          <video
-            autoplay
-            loop
-            class="object-cover absolute h-full min-w-full hidden"
-            id="Video3"
-          >
-            <source src="src/assets/videos/video 3.mp4" type="video/mp4" />
-          </video>
-          <video
-            autoplay
-            loop
-            class="object-cover absolute h-full min-w-full hidden"
-            id="Video4"
-          >
-            <source src="src/assets/videos/video 4.mp4" type="video/mp4" />
-          </video>
-          <video
-            autoplay
-            loop
-            class="object-cover absolute h-full min-w-full hidden"
-            id="Video5"
-          >
-            <source src="src/assets/videos/video 5.mp4" type="video/mp4" />
-          </video>
-          <video
-            autoplay
-            loop
-            class="object-cover absolute max-h-[100%] min-h-full min-w-full hidden max-md:h-[100%]"
-          >
-            <source
-              src="src/assets/videos/video 1 mobile.mp4"
-              type="video/mp4"
-              class="hidden max-md:block"
-            />
-          </video>
+          <div class="video-container active" id="Video1">
+            <video
+              autoplay
+              class="object-cover absolute max-h-[100%] min-h-full min-w-full block max-md:h-[100%]"
+              id="video1"
+            >
+              <source src="src/assets/videos/video 1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-container" id="Video2">
+            <video
+              autoplay
+              class="object-cover absolute h-full min-w-full"
+              id="video2"
+            >
+              <source src="src/assets/videos/video 2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-container" id="Video3">
+            <video
+              autoplay
+              class="object-cover absolute h-full min-w-full"
+              id="video3"
+            >
+              <source src="src/assets/videos/video 3.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-container" id="Video4">
+            <video
+              autoplay
+              class="object-cover absolute h-full min-w-full"
+              id="video4"
+            >
+              <source src="src/assets/videos/video 4.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-container" id="Video5">
+            <video
+              autoplay
+              class="object-cover absolute h-full min-w-full"
+              id="video5"
+            >
+              <source
+                src="src/assets/videos/video 5.mp4"
+                type="video/mp4"
+                class="max-md:hidden"
+              />
+              <source
+                src="src/assets/videos/video 1 mobile.mp4"
+                type="video/mp4"
+                class="hidden max-md:block"
+              />
+            </video>
+          </div>
         </div>
         <div
           class="video-handler-container overflow-x-auto whitespace-nowrap flex justify-between border-b border-gray-600 mt-7 text-GreyText w-full my-0 mx-auto relative gap-5 align-center text-center max-sm:mt-0 no-scrollbar"
@@ -193,14 +193,30 @@
             >
               Sleek Coupe Stance
             </button>
-            <button id="button2" class="py-4 px-7">
+            <button
+              id="button2"
+              class="border-b-2 border-transparent py-4 px-7"
+            >
               Distinctive Front Fascia
             </button>
-            <button id="button3" class="py-4 px-7">Elegant Lines</button>
-            <button id="button4" class="py-4 px-7">
+            <button
+              id="button3"
+              class="border-b-2 border-transparent py-4 px-7"
+            >
+              Elegant Lines
+            </button>
+            <button
+              id="button4"
+              class="border-b-2 border-transparent py-4 px-7"
+            >
               Dual-Mode Active Spoiler
             </button>
-            <button id="button5" class="py-4 px-7">Effortless Grace</button>
+            <button
+              id="button5"
+              class="border-b-2 border-transparent py-4 px-7"
+            >
+              Effortless Grace
+            </button>
           </div>
         </div>
         <p
@@ -220,8 +236,10 @@
         <div
           class="section-4-texts max-w-[1100px] my-0 mx-auto flex align-center justify-between flex-wrap max-md:gap-4 max-md:justify-center max-md:text-center"
         >
-          <h5 class="font-bold text-xl">Express Yourself in Color</h5>
-          <p class="text-[1rem] font-semibold max-sm:font-light lg:max-w-[40%]">
+          <h5 class="font-semibold text-xl">Express Yourself in Color</h5>
+          <p
+            class="text-[1rem] font-PrimaryFont max-sm:font-light lg:max-w-[40%]"
+          >
             9 exterior colors inspired by the different skies worldwide,
             including a color exclusive to EC6, AR Lavender.
           </p>
@@ -230,7 +248,7 @@
           class="car-selector-container flex flex-col max-md:flex-col-reverse items-end gap-[6rem] mt-[4rem] max-md:items-center"
         >
           <div
-            class="color-button flex gap-4 items-center flex-wrap justify-center max-md:px-4 max-sm:justify-start"
+            class="color-button flex gap-4 items-center flex-wrap justify-center max-md:px-4 max-sm:justify-start mr-[6rem] max-md:mr-0"
           >
             <div
               class="round w-[30px] h-[30px] rounded-full bg-Round1 cursor-pointer relative"
@@ -257,7 +275,7 @@
               class="round w-[30px] h-[30px] rounded-full bg-Round8 cursor-pointer relative"
             ></div>
             <div
-              class="round w-[30px] h-[30px] rounded-full bg-Round9 border-2 border-gray-200 cursor-pointer relative"
+              class="round w-[30px] h-[30px] rounded-full bg-Round9 border-[1px] border-gray-200 cursor-pointer relative"
             ></div>
           </div>
 
@@ -316,7 +334,7 @@
             starlit sky, all perfectly framed before your eyes.
           </p>
           <button
-            class="header-button text-white border-2 border-white px-7 py-2.5 text-[1rem] hover:bg-white hover:text-black transition-all max-md:text-sm max-sm:px-4 max-sm:py-2"
+            class="header-button text-white border-[1px] border-white px-7 py-2.5 text-[1rem] hover:bg-white hover:text-black transition-all max-md:text-sm max-sm:px-4 max-sm:py-2"
           >
             Panoramic Glass Roof
           </button>
@@ -345,17 +363,21 @@
         <div
           class="section-6-texts max-w-[1100px] my-0 mx-auto flex align-center justify-between flex-wrap max-md:gap-4 max-md:text-center max-md:justify-center"
         >
-          <h5 class="font-bold text-xl">Express Yourself in Color</h5>
-          <p class="text-[1rem] font-semibold max-sm:font-light">
-            9 exterior colors inspired by the different skies <br />
-            worldwide, including a color exclusive to EC6, AR <br />
-            Lavender.
+          <h5 class="font-semibold text-xl">
+            Four Interior Earth-Inspired Themes
+          </h5>
+          <p class="text-[1.1rem] font-PrimaryFont max-sm:font-light">
+            EC6 presents 4 interior themes inspired by natural <br />
+            earth tones: Onyx Black and other 3 exclusive <br />
+            themes, Stream Blue, Red Loam, and Stellar Violet. Lavender.
           </p>
         </div>
         <div
           class="car-selector-container flex flex-col items-end gap-[6rem] mt-[4rem] max-md:items-center"
         >
-          <div class="color-button-2 flex gap-4 items-center">
+          <div
+            class="color-button-2 flex gap-4 items-center mr-[20rem] max-md:mr-0"
+          >
             <div
               class="round-2 w-[30px] h-[30px] rounded-full bg-Round1 cursor-pointer relative"
             ></div>

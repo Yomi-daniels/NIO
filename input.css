@@ -156,3 +156,11 @@
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.video-container {
+  opacity: 0;
+  display: none;
+}
+.video-container.active {
+  display: block;
+}
