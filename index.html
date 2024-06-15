@@ -124,16 +124,21 @@
         class="section-3-container max-w-[1300px] h-full my-0 mx-auto max-md:custom-padding max-md:px-[1rem]"
       >
         <div
-          class="video-wrapper relative h-[500px] max-md:w-[100%] max-md:h-[300px] border-2"
+          class="video-wrapper relative h-[600px] max-md:w-[100%] max-md:h-[300px] border-2"
         >
           <video
             autoplay
             loop
-            class="object-cover absolute max-h-[100%] min-h-full min-w-full block max-sm:bg-center max-md:object-cover max-md:h-[100%]"
+            class="object-cover absolute max-h-[100%] min-h-full min-w-full block max-md:h-[100%]"
             id="Video1"
           >
-            <source src="src/assets/videos/video 1.mp4" type="video/mp4" />
+            <source
+              src="src/assets/videos/video 1.mp4"
+              type="video/mp4"
+              class="max-md:hidden"
+            />
           </video>
+
           <video
             autoplay
             loop
@@ -166,20 +171,37 @@
           >
             <source src="src/assets/videos/video 5.mp4" type="video/mp4" />
           </video>
+          <video
+            autoplay
+            loop
+            class="object-cover absolute max-h-[100%] min-h-full min-w-full hidden max-md:h-[100%]"
+          >
+            <source
+              src="src/assets/videos/video 1 mobile.mp4"
+              type="video/mp4"
+              class="hidden max-md:block"
+            />
+          </video>
         </div>
         <div
-          class="video-handler-container flex flex-wrap justify-between border-b border-gray-600 mt-7 text-GreyText max-[90%] my-0 mx-auto relative gap-5 align-center text-center max-sm:mt-0"
+          class="video-handler-container overflow-x-auto whitespace-nowrap flex justify-between border-b border-gray-600 mt-7 text-GreyText w-full my-0 mx-auto relative gap-5 align-center text-center max-sm:mt-0 no-scrollbar"
         >
-          <button
-            class="border-b border-black py-4 px-7 text-black"
-            id="button1"
-          >
-            Sleek Coupe Stance
-          </button>
-          <button id="button2">Distinctive Front Fascia</button>
-          <button id="button3">Elegant Lines</button>
-          <button id="button4">Dual-Mode Active Spoiler</button>
-          <button id="button5">Effortless Grace</button>
+          <div class="video-handler-container-child flex w-max">
+            <button
+              class="border-b border-black py-4 px-7 text-black"
+              id="button1"
+            >
+              Sleek Coupe Stance
+            </button>
+            <button id="button2" class="py-4 px-7">
+              Distinctive Front Fascia
+            </button>
+            <button id="button3" class="py-4 px-7">Elegant Lines</button>
+            <button id="button4" class="py-4 px-7">
+              Dual-Mode Active Spoiler
+            </button>
+            <button id="button5" class="py-4 px-7">Effortless Grace</button>
+          </div>
         </div>
         <p
           class="video-text my-0 mx-auto mt-8 text-GreyText text-xl text-center max-w-[70ch] md:text-xl font-light max-sm:text-[1rem]"
