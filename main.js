@@ -1,3 +1,4 @@
+// POSITION FIXED CHANGES BACKGROUND-COLOR ON SCROLL
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
   if (window.scrollY > 0) {
@@ -7,89 +8,83 @@ window.addEventListener("scroll", function () {
     header.style.backgroundColor = "transparent";
   }
 });
-// const videos = document.querySelector("video");
-// const button1 = document.getElementById("button1");
-// const button2 = document.getElementById("button2");
-// const button3 = document.getElementById("button3");
-// const button4 = document.getElementById("button4");
-// const button5 = document.getElementById("button5");
-// const video2 = document.getElementById("Video2");
-// const video1 = document.getElementById("Video1");
 
-// button2.addEventListener("click", () => {
-//   video2.style.display = "block";
-//   video2.style.opacity = "1";
-//   videos.style.opacity = "0";
-//   button2.style.borderBottom = "1px solid #000000";
-//   button2.style.color = "#000000";
-//   button1.style.borderBottom = "none";
-//   video2.classList.add("active");
-//   video1.classList.remove("active");
-// });
-// button1.addEventListener("click", () => {
-//   video2.style.opacity = "0";
-//   video1.classList.add("active");
-//   video1.style.opacity = "1";
-//   button1.style.borderBottom = "1px solid #000000";
-//   button2.style.borderBottom = "none";
-// });
+// SECTION 3 VIDEO PLAYS ONCLICK
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".video-handler-container button");
+  const videoContainers = document.querySelectorAll(".video-container");
+  const videoElements = document.querySelectorAll("video");
+  const textContainers = document.querySelectorAll(".text-container");
 
-const buttons = document.querySelectorAll(".video-handler-container button");
-const videoContainers = document.querySelectorAll(".video-container");
-const videoElements = document.querySelectorAll("video");
-
-buttons.forEach((button, index) => {
-  button.addEventListener("click", () => {
-    videoContainers.forEach((videoContainer, vidIndex) => {
-      if (index === vidIndex) {
-        gsap.to(videoContainer, {
-          opacity: 1,
-          duration: 0.1,
-          ease: "power1.in",
-          onStart: () => {
-            videoContainer.style.display = "block";
-            videoElements[vidIndex].play();
-          },
-        });
-        button.style.borderBottom = "2px solid black";
-        button.style.color = "black";
-      } else {
-        gsap.to(videoContainer, {
-          opacity: 0.7,
-          duration: 0.1,
-          ease: "power1.in",
-          onComplete: () => {
-            videoContainer.style.display = "none";
-            videoElements[vidIndex].pause();
-            videoElements[vidIndex].currentTime = 0;
-          },
-        });
-        buttons[vidIndex].style.borderBottom = "2px solid transparent";
-        buttons[vidIndex].style.color = "#979797";
-      }
+  buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      videoContainers.forEach((videoContainer, vidIndex) => {
+        if (index === vidIndex) {
+          gsap.to(videoContainer, {
+            opacity: 1,
+            duration: 0.1,
+            ease: "power1.in",
+            onStart: () => {
+              videoContainer.style.display = "block";
+              videoElements[vidIndex].play();
+            },
+          });
+          button.style.borderBottom = "1px solid black";
+          button.style.color = "black";
+          // button.classList.add("active");
+          gsap.to(textContainers[vidIndex], {
+            opacity: 1,
+            duration: 0.3,
+            ease: "power1.in",
+            onStart: () => {
+              textContainers[vidIndex].style.display = "block";
+            },
+          });
+        } else {
+          gsap.to(videoContainer, {
+            opacity: 0,
+            duration: 0.1,
+            ease: "power1.in",
+            onComplete: () => {
+              videoContainer.style.display = "none";
+              videoElements[vidIndex].pause();
+              videoElements[vidIndex].currentTime = 0;
+            },
+          });
+          buttons[vidIndex].style.borderBottom = "1px solid transparent";
+          buttons[vidIndex].style.color = "#979797";
+          buttons[vidIndex].classList.remove("active");
+          gsap.to(textContainers[vidIndex], {
+            opacity: 0,
+            duration: 0.3,
+            ease: "power1.in",
+            onComplete: () => {
+              textContainers[vidIndex].style.display = "none";
+            },
+          });
+        }
+      });
     });
   });
 });
+// CAR COLOR SELECTION ON CLICK
+document.addEventListener("DOMContentLoaded", () => {
+  const rounds = document.querySelectorAll(".round");
+  const vehicles = document.querySelectorAll(".vehicles-selected-content");
 
-// const observerOptions = {
-//   root: null,
-//   rootMargin: "0px",
-//   threshold: 0.5,
-// };
-
-// const observerCallback = (entries, observer) => {
-//   entries.forEach((entry) => {
-//     const video = entry.target.querySelector("video");
-//     if (entry.isIntersecting) {
-//       video.play();
-//     } else {
-//       video.pause();
-//     }
-//   });
-// };
-
-// const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-// videoContainers.forEach((videoContainer) => {
-//   observer.observe(videoContainer);
-// });
+  rounds.forEach((round, index) => {
+    round.addEventListener("click", () => {
+      vehicles.forEach((vehicle, vicIndex) => {
+        if (index === vicIndex) {
+          vehicle.classList.add("active");
+          vehicle.style.opacity = "1";
+          vehicle.style.display = vehicle.style.transition = ".5s ease-in";
+        } else {
+          vehicle.classList.remove("active");
+          vehicle.style.opacity = "0";
+          vehicle.style.transition = ".5s ease-out";
+        }
+      });
+    });
+  });
+});

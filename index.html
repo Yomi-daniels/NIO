@@ -41,7 +41,7 @@
         class="hidden max-[900px]:block h-[100dvh] w-full object-cover"
       />
       <header
-        class="fixed top-0 w-full px-12 py-7 z-50 cursor-pointer hover:h-[70px] hover:ease-in-out hover:duration-300"
+        class="fixed top-0 w-full px-12 py-7 z-50 cursor-pointer hover:h-[70px]"
         style="padding: 1rem 2rem"
       >
         <div
@@ -113,7 +113,7 @@
         >
           Exterior
         </p>
-        <p class="text-white text-7xl max-md:text-4xl max-sm:text-2xl">
+        <p class="text-white text-7xl font-[300] max-md:text-4xl max-sm:text-2xl">
           A brand new agile posture, <br />
           with a captivating charm.
         </p>
@@ -125,78 +125,78 @@
       <div
         class="section-3-container max-w-[1300px] h-full my-0 mx-auto max-md:custom-padding max-md:px-[1rem]"
       >
-        <div
-          class="video-wrapper relative h-[600px] max-md:w-[100%] max-md:h-[300px] border-[1px]"
+      <div
+      class="video-wrapper relative h-[600px] max-md:w-[100%] max-md:h-[300px] border-[1px]"
+    >
+      <div class="video-container active opacity-[1]" id="Video1">
+        <video
+          autoplay
+          playsinline
+          muted
+          class="object-cover absolute max-h-[100%] min-h-full min-w-full block max-md:h-[100%]"
+          id="video1"
         >
-          <div class="video-container active" id="Video1">
-            <video
-              autoplay
-              playsinline
-              muted
-              class="object-cover absolute max-h-[100%] min-h-full min-w-full block max-md:h-[100%]"
-              id="video1"
-            >
-              <source src="src/assets/videos/video 1.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="video-container" id="Video2">
-            <video
-              playsinline
-              muted
-              autoplay
-              class="object-cover absolute h-full min-w-full"
-              id="video2"
-            >
-              <source src="src/assets/videos/video 2.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="video-container" id="Video3">
-            <video
-              autoplay
-              playsinline
-              muted
-              class="object-cover absolute h-full min-w-full"
-              id="video3"
-            >
-              <source src="src/assets/videos/video 3.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="video-container" id="Video4">
-            <video
-              autoplay
-              playsinline
-              muted
-              class="object-cover absolute h-full min-w-full"
-              id="video4"
-            >
-              <source src="src/assets/videos/video 4.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="video-container" id="Video5">
-            <video
-              autoplay
-              playsinline
-              muted
-              class="object-cover absolute h-full min-w-full"
-              id="video5"
-            >
-              <source
-                src="src/assets/videos/video 5.mp4"
-                type="video/mp4"
-                class="max-md:hidden"
-              />
-              <source
-                src="src/assets/videos/video 1 mobile.mp4"
-                type="video/mp4"
-                class="hidden max-md:block"
-              />
-            </video>
-          </div>
-        </div>
-        <div
-          class="video-handler-container overflow-x-auto whitespace-nowrap flex justify-between border-b border-gray-600 mt-7 text-GreyText w-full my-0 mx-auto relative gap-5 align-center text-center max-sm:mt-0 no-scrollbar"
+          <source src="src/assets/videos/video 1.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-container" id="Video2">
+        <video
+          playsinline
+          muted
+          autoplay
+          class="object-cover absolute h-full min-w-full"
+          id="video2"
         >
-          <div class="video-handler-container-child flex w-max my-0 mx-auto">
+          <source src="src/assets/videos/video 2.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-container" id="Video3">
+        <video
+          autoplay
+          playsinline
+          muted
+          class="object-cover absolute h-full min-w-full"
+          id="video3"
+        >
+          <source src="src/assets/videos/video 3.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-container" id="Video4">
+        <video
+          autoplay
+          playsinline
+          muted
+          class="object-cover absolute h-full min-w-full"
+          id="video4"
+        >
+          <source src="src/assets/videos/video 4.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-container" id="Video5">
+        <video
+          autoplay
+          playsinline
+          muted
+          class="object-cover absolute h-full min-w-full"
+          id="video5"
+        >
+          <source
+            src="src/assets/videos/video 5.mp4"
+            type="video/mp4"
+            class="max-md:hidden"
+          />
+          <source
+            src="src/assets/videos/video 1 mobile.mp4"
+            type="video/mp4"
+            class="hidden max-md:block"
+          />
+        </video>
+      </div>
+    </div>
+        <div
+          class="video-handler-container overflow-x-auto whitespace-nowrap flex justify-between border-b border-gray-600 mt-7 text-GreyText w-full my-0 mx-auto relative gap-5 align-center text-center max-sm:mt-0 no-scrollbar max-w-[90%]"
+        >
+          <div class="video-handler-container-child flex w-max my-0 mx-auto h-full">
             <button
               class="border-b border-black py-4 px-7 text-black"
               id="button1"
@@ -229,14 +229,66 @@
             </button>
           </div>
         </div>
-        <p
-          class="video-text my-0 mx-auto mt-8 text-GreyText text-xl text-center max-w-[70ch] md:text-xl font-light max-sm:text-[1rem]"
+
+        <div
+          class="video-text-container relative max-w-full min-h-full py-[5rem]"
         >
-          With its wide body, extended wheelbase, and visually imposing low
-          profile, EC6 displays an captivating sense of motion. Its harmonious
-          combination of sculpted surfaces and muscular broad shoulders
-          showcases a stunning and powerful aesthetic.
-        </p>
+          <div class="text-container active absolute top-0 w-full" id="Text1">
+            <p
+              class="video-text my-0 mx-auto mt-8 text-GreyText text-xl text-center max-w-[70ch] md:text-xl font-light max-sm:text-[1rem]"
+              id="text1"
+            >
+              With its wide body, extended wheelbase, and visually imposing low
+              profile, EC6 displays an captivating sense of motion. Its
+              harmonious combination of sculpted surfaces and muscular broad
+              shoulders showcases a stunning and powerful aesthetic.
+            </p>
+          </div>
+          <div class="text-container absolute top-0 w-full hidden" id="Text2">
+            <p
+              class="video-text my-0 mx-auto mt-8 text-GreyText text-xl text-center max-w-[70ch] md:text-xl font-light max-sm:text-[1rem]"
+              id="text2"
+            >
+              With its innovative segmented design of the Double Dash daytime
+              running lights, the distinctive, crafted front fascia makes EC6
+              instantly recognizable. Combined with the iconic NIO X-Bar, it
+              bestows EC6 with a bold and avant-garde style.
+            </p>
+          </div>
+          <div class="text-container absolute top-0 w-full hidden" id="Text3">
+            <p
+              class="video-text my-0 mx-auto mt-8 text-GreyText text-xl text-center max-w-[70ch] md:text-xl font-light max-sm:text-[1rem]"
+              id="text3"
+            >
+              The striking aesthetics and meticulous design detailing create
+              flawless body contours, while the sleek and graceful silhouette
+              unveils an enchanting allure. With just a single glance, EC6 has
+              the power to captivate hearts.
+            </p>
+          </div>
+          <div class="text-container absolute top-0 w-full hidden" id="Text4">
+            <p
+              class="video-text my-0 mx-auto mt-8 text-GreyText text-xl text-center max-w-[70ch] md:text-xl font-light max-sm:text-[1rem]"
+              id="text4"
+            >
+              In High-Speed Mode, the spoiler delivers an additional 58kg of
+              downforce, ensuring impeccable stability. In Reduced-Drag Mode,
+              its optimized aerodynamics efficiently curtails air resistance by
+              an impressive 10%.
+            </p>
+          </div>
+          <div class="text-container absolute top-0 w-full hidden" id="Text5">
+            <p
+              class="video-text my-0 mx-auto mt-8 text-GreyText text-xl text-center max-w-[70ch] md:text-xl font-light max-sm:text-[1rem]"
+              id="text5"
+            >
+              Featuring a graceful sloping design, the roof lines extend
+              downward, evoking a seamless sense of fluidity and finesse.
+              Enhanced by the illumiBlade taillights, the rear exudes a
+              captivating aura that remains etched in the memory.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section-4 w-full h-full relative mt-[5rem]">
@@ -261,48 +313,177 @@
             class="color-button flex gap-4 items-center flex-wrap justify-center max-md:px-4 max-sm:justify-start mr-[6rem] max-md:mr-0"
           >
             <div
-              class="round w-[30px] h-[30px] rounded-full bg-Round1 cursor-pointer relative"
+              class="round w-[30px] h-[30px] rounded-full bg-Round1 cursor-pointer relative" id="round1"
             ></div>
             <div
               class="round w-[30px] h-[30px] rounded-full bg-Round2 cursor-pointer relative"
+              id="round2"
             ></div>
             <div
               class="round w-[30px] h-[30px] rounded-full bg-Round3 cursor-pointer relative"
+              id="round3"
             ></div>
             <div
               class="round w-[30px] h-[30px] rounded-full bg-Round4 cursor-pointer relative"
+              id="round4"
             ></div>
             <div
               class="round w-[30px] h-[30px] rounded-full bg-Round5 cursor-pointer relative"
+              id="round5"
             ></div>
             <div
               class="round w-[30px] h-[30px] rounded-full bg-Round6 cursor-pointer relative"
+              id="round6"
             ></div>
             <div
               class="round w-[30px] h-[30px] rounded-full bg-Round7 cursor-pointer relative"
+              id="round7"
             ></div>
             <div
               class="round w-[30px] h-[30px] rounded-full bg-Round8 cursor-pointer relative"
+              id="round8"
             ></div>
             <div
               class="round w-[30px] h-[30px] rounded-full bg-Round9 border-[1px] border-gray-200 cursor-pointer relative"
+              id="round9"
             ></div>
           </div>
 
-          <div class="vehicles-selected-container relative w-full">
-            <div
-              class="vehicle-content w-full h-full flex flex-col bg-Round1 py-[2rem]"
-            >
-              <img
-                src="src/assets/images/vehicle1.png"
-                alt="vehicle"
-                class="w-full max-md:h-[300px] object-contain"
-              />
-              <p
-                class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] max-md:text-center"
-              >
-                AR Lavender
-              </p>
+          <div class="vehicle-selected-container relative">
+            <div class="vehicles-selected-content active w-full w-full h-full" id="vehicle-r1">
+              <div class="vehicle-content w-full h-full flex flex-col relative">
+                <img
+                  src="src/assets/images/vehicle round1.png"
+                  alt="vehicle"
+                  class="w-full max-md:h-[300px] object-contain"
+                />
+                <p
+                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] max-md:text-center absolute bottom-[10%] left-[5%]"
+                >
+                  AR Lavender
+                </p>
+              </div>
+              </div>
+              <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
+              id="vehicle-r2">
+                <div class="vehicle-content w-full h-full flex flex-col relative">
+                  <img
+                    src="src/assets/images/vehicle round2.jpg"
+                    alt="vehicle"
+                    class="w-full max-md:h-[300px] object-contain"
+                  />
+                  <p
+                    class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] max-md:text-center absolute bottom-[10%] left-[5%]"
+                  >
+                  Star Gray
+                  </p>
+                </div>
+              </div>
+                <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
+                id="vehicle-r3">
+                  <div class="vehicle-content w-full h-full flex flex-col relative">
+                    <img
+                      src="src/assets/images/vehicle round3.png"
+                      alt="vehicle"
+                      class="w-full max-md:h-[300px] object-contain"
+                    />
+                    <p
+                      class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] max-md:text-center absolute bottom-[10%] left-[5%]"
+                    >
+                    Arctic Green
+                    </p>
+                  </div>
+                </div>
+                  <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
+                  id="vehicle-r4">
+                    <div class="vehicle-content w-full h-full flex flex-col relative">
+                      <img
+                        src="src/assets/images/vehicle round4.png"
+                        alt="vehicle"
+                        class="w-full max-md:h-[300px] object-contain"
+                      />
+                      <p
+                        class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] max-md:text-center absolute bottom-[10%] left-[5%]"
+                      >
+                      Sunlight Gold
+                      </p>
+                    </div>
+                  </div>
+                    <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
+                    id="vehicle-r5">
+                      <div class="vehicle-content w-full h-full flex flex-col relative">
+                        <img
+                          src="src/assets/images/vehicle round5.png"
+                          alt="vehicle"
+                          class="w-full max-md:h-[300px] object-contain"
+                        />
+                        <p
+                          class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] max-md:text-center absolute bottom-[10%] left-[5%]"
+                        >
+                        Airspace Blue
+                        </p>
+                      </div>
+                    </div>
+                      <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
+                      id="vehicle-r6">
+                        <div class="vehicle-content w-full h-full flex flex-col relative">
+                          <img
+                            src="src/assets/images/vehicle round6.png"
+                            alt="vehicle"
+                            class="w-full max-md:h-[300px] object-contain"
+                          />
+                          <p
+                            class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] max-md:text-center absolute bottom-[10%] left-[5%]"
+                          >
+                          Southern Star
+                          </p>
+                        </div>
+                      </div>
+                        <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
+                        id="vehicle-r7">
+                          <div class="vehicle-content w-full h-full flex flex-col relative">
+                            <img
+                              src="src/assets/images/vehicle round7.png"
+                              alt="vehicle"
+                              class="w-full max-md:h-[300px] object-contain"
+                            />
+                            <p
+                              class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] max-md:text-center absolute bottom-[10%] left-[5%]"
+                            >
+                            Stratosphere Blue
+                            </p>
+                          </div>
+                        </div>
+                          <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
+                          id="vehicle-r8">
+                            <div class="vehicle-content w-full h-full flex flex-col relative">
+                              <img
+                                src="src/assets/images/vehicle round8.png"
+                                alt="vehicle"
+                                class="w-full max-md:h-[300px] object-contain"
+                              />
+                              <p
+                                class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] max-md:text-center absolute bottom-[10%] left-[5%]"
+                              >
+                              Deep Black
+                              </p>
+                            </div>
+                          </div>
+                            <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
+                            id="vehicle-r9">
+                              <div class="vehicle-content w-full h-full flex flex-col relative">
+                                <img
+                                  src="src/assets/images/vehicle round9.png"
+                                  alt="vehicle"
+                                  class="w-full max-md:h-[300px] object-contain"
+                                />
+                                <p
+                                  class="text-black text-[1rem] font-light ml-[5rem] max-md:ml-[0] max-md:text-center absolute bottom-[10%] left-[5%]"
+                                >
+                                Cloud White
+                                </p>
+                              </div>
+                            </div>
             </div>
           </div>
         </div>
