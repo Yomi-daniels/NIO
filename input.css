@@ -11,6 +11,22 @@
   @apply max-md:px-[1rem];
 }
 
+body::-webkit-scrollbar {
+  width: 4px; /* Change this value to adjust the width */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #bbbbbb; /* Color of the scrollbar thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovering over the scrollbar thumb */
+}
+
 header:hover nav {
   margin-top: 0.3rem;
   padding-top: 0.3rem;

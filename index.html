@@ -88,7 +88,7 @@
         />
 
         <button
-          class="header-button absolute bottom-[14%] left-[45.5%] max-[1284px]:left-[42%] max-[887px]:left-[40%] max-[722px]:left-[38%] max-[595px]:left-[39%] max-[444px]:left-[37%] text-white border-[1px] border-white px-7 py-2.5 text-[1rem] hover:bg-white hover:text-black transition-all max-md:text-sm max-sm:px-4 max-sm:py-2"
+          class="header-button absolute bottom-[14%] left-[45.5%] max-[1284px]:left-[42%] max-[887px]:left-[40%] max-[722px]:left-[38%] max-[595px]:left-[39%] max-[444px]:left-[37%] text-white border-[1px] border-white px-7 py-2.5 text-[1rem] hover:bg-white hover:text-black transition-all max-md:text-sm max-sm:px-4 max-sm:py-2 max-sm:bottom-[16%]"
         >
           Watch Video
         </button>
@@ -113,7 +113,9 @@
         >
           Exterior
         </p>
-        <p class="text-white text-7xl font-[300] max-md:text-4xl max-sm:text-2xl">
+        <p
+          class="text-white text-7xl font-[300] max-md:text-4xl max-sm:text-2xl"
+        >
           A brand new agile posture, <br />
           with a captivating charm.
         </p>
@@ -125,78 +127,80 @@
       <div
         class="section-3-container max-w-[1300px] h-full my-0 mx-auto max-md:custom-padding max-md:px-[1rem]"
       >
-      <div
-      class="video-wrapper relative h-[600px] max-md:w-[100%] max-md:h-[300px] border-[1px]"
-    >
-      <div class="video-container active opacity-[1]" id="Video1">
-        <video
-          autoplay
-          playsinline
-          muted
-          class="object-cover absolute max-h-[100%] min-h-full min-w-full block max-md:h-[100%]"
-          id="video1"
+        <div
+          class="video-wrapper relative h-[600px] max-md:w-[100%] max-md:h-[300px] border-[1px]"
         >
-          <source src="src/assets/videos/video 1.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div class="video-container" id="Video2">
-        <video
-          playsinline
-          muted
-          autoplay
-          class="object-cover absolute h-full min-w-full"
-          id="video2"
-        >
-          <source src="src/assets/videos/video 2.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div class="video-container" id="Video3">
-        <video
-          autoplay
-          playsinline
-          muted
-          class="object-cover absolute h-full min-w-full"
-          id="video3"
-        >
-          <source src="src/assets/videos/video 3.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div class="video-container" id="Video4">
-        <video
-          autoplay
-          playsinline
-          muted
-          class="object-cover absolute h-full min-w-full"
-          id="video4"
-        >
-          <source src="src/assets/videos/video 4.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div class="video-container" id="Video5">
-        <video
-          autoplay
-          playsinline
-          muted
-          class="object-cover absolute h-full min-w-full"
-          id="video5"
-        >
-          <source
-            src="src/assets/videos/video 5.mp4"
-            type="video/mp4"
-            class="max-md:hidden"
-          />
-          <source
-            src="src/assets/videos/video 1 mobile.mp4"
-            type="video/mp4"
-            class="hidden max-md:block"
-          />
-        </video>
-      </div>
-    </div>
+          <div class="video-container active opacity-[1]" id="Video1">
+            <video
+              autoplay
+              playsinline
+              muted
+              class="object-cover absolute max-h-[100%] min-h-full min-w-full block max-md:h-[100%]"
+              id="video1"
+            >
+              <source src="src/assets/videos/video 1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-container" id="Video2">
+            <video
+              playsinline
+              muted
+              autoplay
+              class="object-cover absolute h-full min-w-full"
+              id="video2"
+            >
+              <source src="src/assets/videos/video 2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-container" id="Video3">
+            <video
+              autoplay
+              playsinline
+              muted
+              class="object-cover absolute h-full min-w-full"
+              id="video3"
+            >
+              <source src="src/assets/videos/video 3.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-container" id="Video4">
+            <video
+              autoplay
+              playsinline
+              muted
+              class="object-cover absolute h-full min-w-full"
+              id="video4"
+            >
+              <source src="src/assets/videos/video 4.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-container" id="Video5">
+            <video
+              autoplay
+              playsinline
+              muted
+              class="object-cover absolute h-full min-w-full"
+              id="video5"
+            >
+              <source
+                src="src/assets/videos/video 5.mp4"
+                type="video/mp4"
+                class="max-md:hidden"
+              />
+              <source
+                src="src/assets/videos/video 1 mobile.mp4"
+                type="video/mp4"
+                class="hidden max-md:block"
+              />
+            </video>
+          </div>
+        </div>
         <div
           class="video-handler-container overflow-x-auto whitespace-nowrap flex justify-between border-b border-gray-600 mt-7 text-GreyText w-full my-0 mx-auto relative gap-5 align-center text-center max-sm:mt-0 no-scrollbar max-w-[90%]"
         >
-          <div class="video-handler-container-child flex w-max my-0 mx-auto h-full">
+          <div
+            class="video-handler-container-child flex w-max my-0 mx-auto h-full"
+          >
             <button
               class="border-b border-black py-4 px-7 text-black"
               id="button1"
@@ -291,12 +295,14 @@
         </div>
       </div>
     </section>
-    <section class="section-4 w-full h-full relative mt-[5rem]">
+    <section
+      class="section-4 w-full min-h-[100%] relative mt-[5rem] lg:pb-[18rem] sm:pb-[15rem]"
+    >
       <div
         class="section-4-container max-w-[1200px] h-full my-0 mx-auto custom-padding"
       >
         <div
-          class="section-4-texts max-w-[1100px] my-0 mx-auto flex align-center justify-between flex-wrap max-md:gap-4 max-md:justify-center max-md:text-center"
+          class="section-4-texts max-w-[1100px] my-0 mx-auto flex align-center justify-between gap-[2em] max-md:justify-center md:text-center md:px-[3rem] md:flex-col lg:flex-row"
         >
           <h5 class="font-semibold text-xl">Express Yourself in Color</h5>
           <p
@@ -307,13 +313,14 @@
           </p>
         </div>
         <div
-          class="car-selector-container flex flex-col max-md:flex-col-reverse items-end gap-[6rem] mt-[4rem] max-md:items-center"
+          class="car-selector-container flex flex-col max-md:flex-col-reverse items-end gap-[6em] mt-[4rem] max-md:items-center max-sm:gap-[2em] md:h-[60vh] border[5px]"
         >
           <div
             class="color-button flex gap-4 items-center flex-wrap justify-center max-md:px-4 max-sm:justify-start mr-[6rem] max-md:mr-0"
           >
             <div
-              class="round w-[30px] h-[30px] rounded-full bg-Round1 cursor-pointer relative" id="round1"
+              class="round w-[30px] h-[30px] rounded-full bg-Round1 cursor-pointer relative"
+              id="round1"
             ></div>
             <div
               class="round w-[30px] h-[30px] rounded-full bg-Round2 cursor-pointer relative"
@@ -349,166 +356,224 @@
             ></div>
           </div>
 
-          <div class="vehicle-selected-container relative">
-            <div class="vehicles-selected-content active w-full w-full h-full" id="vehicle-r1">
-              <div class="vehicle-content w-full h-full flex flex-col relative">
+          <div
+            class="vehicle-selected-container relative w-full h-[604px] sm:h-[900px]"
+          >
+            <div
+              class="vehicles-selected-content active w-full w-full h-full relative"
+              id="vehicle-r1"
+            >
+              <div
+                class="vehicle-content w-full h-full flex flex-col relative px-[2rem]"
+              >
                 <img
                   src="src/assets/images/vehicle round1.png"
                   alt="vehicle"
-                  class="w-full object-contain max-sm:hidden"
+                  class="w-full object-contain md:hidden lg:block"
                 />
-                <img src="src/assets/images/vehicle round 1 mobile.jpg" alt="vehicle" class="max-sm:block hidden">
+                <img
+                  src="src/assets/images/vehicle round 1 mobile.jpg"
+                  alt="vehicle"
+                  class="md:block hidden lg:hidden h-[800px] object-cover"
+                />
                 <p
-                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[10%] left-[5%] max-sm:left-[35%]"
+                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[5%] left-[5%] max-sm:left-[35%] sm:text-[2rem]"
                 >
                   AR Lavender
                 </p>
               </div>
-              </div>
-              <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
-              id="vehicle-r2">
-                <div class="vehicle-content w-full h-full flex flex-col relative">
-                  <img
-                    src="src/assets/images/vehicle round2.jpg"
-                    alt="vehicle"
-                    class="w-full max-md:h-[300px] object-contain max-sm:hidden"
-                  />
-                  <img src="src/assets/images/vehicle round 2 mobile.jpg" alt="vehicle" class="max-sm:block hidden">
-                  <p
-                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[10%] left-[5%] max-sm:left-[35%]"
+            </div>
+            <div
+              class="vehicles-selected-content w-full opacity-0 absolute top-0"
+              id="vehicle-r2"
+            >
+              <div class="vehicle-content w-full h-full flex flex-col relative">
+                <img
+                  src="src/assets/images/vehicle round2.jpg"
+                  alt="vehicle"
+                  class="w-full object-contain md:hidden lg:block max-md:h-[300px]"
+                />
+                <img
+                  src="src/assets/images/vehicle round 2 mobile.jpg"
+                  alt="vehicle"
+                  class="md:block hidden lg:hidden h-[800px] object-cover"
+                />
+                <p
+                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[5%] left-[5%] max-sm:left-[35%] sm:text-[2rem]"
                 >
                   Star Gray
-                  </p>
-                </div>
+                </p>
               </div>
-                <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
-                id="vehicle-r3">
-                  <div class="vehicle-content w-full h-full flex flex-col relative">
-                    <img
-                      src="src/assets/images/vehicle round3.png"
-                      alt="vehicle"
-                      class="w-full max-md:h-[300px] object-contain max-sm:hidden"
-                    />
-                    <img src="src/assets/images/vehicle round 3 mobile.jpg" alt="vehicle" class="max-sm:block hidden">
-                    <p
-                    class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[10%] left-[5%] max-sm:left-[35%]"
-                  >
-                    Arctic Green
-                    </p>
-                  </div>
-                </div>
-                  <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
-                  id="vehicle-r4">
-                    <div class="vehicle-content w-full h-full flex flex-col relative">
-                      <img
-                        src="src/assets/images/vehicle round4.png"
-                        alt="vehicle"
-                        class="w-full max-md:h-[300px] object-contain max-sm:hidden"
-                      />
-                      <img src="src/assets/images/vehicle round 4 mobile.jpg" alt="vehicle" class="max-sm:block hidden">
-                      <p
-                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[10%] left-[5%] max-sm:left-[35%]"
+            </div>
+            <div
+              class="vehicles-selected-content w-full opacity-0 absolute top-0"
+              id="vehicle-r3"
+            >
+              <div class="vehicle-content w-full h-full flex flex-col relative">
+                <img
+                  src="src/assets/images/vehicle round3.png"
+                  alt="vehicle"
+                  class="w-full object-contain md:hidden lg:block max-md:h-[300px]"
+                />
+                <img
+                  src="src/assets/images/vehicle round 3 mobile.jpg"
+                  alt="vehicle"
+                  class="md:block hidden lg:hidden h-[800px] object-cover"
+                />
+                <p
+                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[5%] left-[5%] max-sm:left-[35%] sm:text-[2rem]"
                 >
-                      Sunlight Gold
-                      </p>
-                    </div>
-                  </div>
-                    <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
-                    id="vehicle-r5">
-                      <div class="vehicle-content w-full h-full flex flex-col relative">
-                        <img
-                          src="src/assets/images/vehicle round5.png"
-                          alt="vehicle"
-                          class="w-full max-md:h-[300px] object-contain max-sm:hidden"
-                        />
-                        <img src="src/assets/images/vehicle round 5 moblie.jpg" alt="vehicle" class="max-sm:block hidden">
-                        <p
-                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[10%] left-[5%] max-sm:left-[35%]"
+                  Arctic Green
+                </p>
+              </div>
+            </div>
+            <div
+              class="vehicles-selected-content w-full opacity-0 absolute top-0"
+              id="vehicle-r4"
+            >
+              <div class="vehicle-content w-full h-full flex flex-col relative">
+                <img
+                  src="src/assets/images/vehicle round4.png"
+                  alt="vehicle"
+                  class="w-full object-contain md:hidden lg:block max-md:h-[300px]"
+                />
+                <img
+                  src="src/assets/images/vehicle round 4 mobile.jpg"
+                  alt="vehicle"
+                  class="md:block hidden lg:hidden h-[800px] object-cover"
+                />
+                <p
+                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[5%] left-[5%] max-sm:left-[35%] sm:text-[2rem]"
                 >
-                        Airspace Blue
-                        </p>
-                      </div>
-                    </div>
-                      <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
-                      id="vehicle-r6">
-                        <div class="vehicle-content w-full h-full flex flex-col relative">
-                          <img
-                            src="src/assets/images/vehicle round6.png"
-                            alt="vehicle"
-                            class="w-full max-md:h-[300px] object-contain max-sm:hidden"
-                          />
-                          <img src="src/assets/images/vehicle round 6 mobile.jpg" alt="vehicle" class="max-sm:block hidden">
-                          <p
-                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[10%] left-[5%] max-sm:left-[35%]"
+                  Sunlight Gold
+                </p>
+              </div>
+            </div>
+            <div
+              class="vehicles-selected-content w-full opacity-0 absolute top-0"
+              id="vehicle-r5"
+            >
+              <div class="vehicle-content w-full h-full flex flex-col relative">
+                <img
+                  src="src/assets/images/vehicle round5.png"
+                  alt="vehicle"
+                  class="w-full object-contain md:hidden lg:block max-md:h-[300px]"
+                />
+                <img
+                  src="src/assets/images/vehicle round 5 moblie.jpg"
+                  alt="vehicle"
+                  class="md:block hidden lg:hidden h-[800px] object-cover"
+                />
+                <p
+                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[5%] left-[5%] max-sm:left-[35%] sm:text-[2rem]"
                 >
-                          Southern Star
-                          </p>
-                        </div>
-                      </div>
-                        <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
-                        id="vehicle-r7">
-                          <div class="vehicle-content w-full h-full flex flex-col relative">
-                            <img
-                              src="src/assets/images/vehicle round7.png"
-                              alt="vehicle"
-                              class="w-full max-md:h-[300px] object-contain max-sm:hidden"
-                            />
-                            <img src="src/assets/images/vehicle round 7 mobile.jpg" alt="vehicle" class="max-sm:block hidden">
-                            <p
-                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[10%] left-[5%] max-sm:left-[35%]"
+                  Airspace Blue
+                </p>
+              </div>
+            </div>
+            <div
+              class="vehicles-selected-content w-full opacity-0 absolute top-0"
+              id="vehicle-r6"
+            >
+              <div class="vehicle-content w-full h-full flex flex-col relative">
+                <img
+                  src="src/assets/images/vehicle round6.png"
+                  alt="vehicle"
+                  class="w-full object-contain md:hidden lg:block max-md:h-[300px]"
+                />
+                <img
+                  src="src/assets/images/vehicle round 6 mobile.jpg"
+                  alt="vehicle"
+                  class="md:block hidden lg:hidden h-[800px] object-cover"
+                />
+                <p
+                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[5%] left-[5%] max-sm:left-[35%] sm:text-[2rem]"
                 >
-                            Stratosphere Blue
-                            </p>
-                          </div>
-                        </div>
-                          <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
-                          id="vehicle-r8">
-                            <div class="vehicle-content w-full h-full flex flex-col relative">
-                              <img
-                                src="src/assets/images/vehicle round8.png"
-                                alt="vehicle"
-                                class="w-full max-md:h-[300px] object-contain max-sm:hidden"
-                              />
-                              <img src="src/assets/images/vehicle round 8 mobile.jpg" alt="vehicle" class="max-sm:block hidden">
-                              <p
-                              class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[10%] left-[5%] max-sm:left-[35%]"
-                            >
-                              Deep Black
-                              </p>
-                            </div>
-                          </div>
-                            <div class="vehicles-selected-content w-full opacity-0 absolute top-0"
-                            id="vehicle-r9">
-                              <div class="vehicle-content w-full h-full flex flex-col relative">
-                                <img
-                                  src="src/assets/images/vehicle round9.png"
-                                  alt="vehicle"
-                                  class="w-full max-md:h-[300px] object-contain max-sm:hidden"
-                                />
-                                <img src="src/assets/images/vehicle round 9 mobile.jpg" alt="vehicle" class="max-sm:block hidden">
-                                <p
-                                class="text-black text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[10%] left-[5%] max-sm:left-[35%]"
-                              >
-                                Cloud White
-                                </p>
-                              </div>
-                            </div>
+                  Southern Star
+                </p>
+              </div>
+            </div>
+            <div
+              class="vehicles-selected-content w-full opacity-0 absolute top-0"
+              id="vehicle-r7"
+            >
+              <div class="vehicle-content w-full h-full flex flex-col relative">
+                <img
+                  src="src/assets/images/vehicle round7.png"
+                  alt="vehicle"
+                  class="w-full object-contain md:hidden lg:block max-md:h-[300px]"
+                />
+                <img
+                  src="src/assets/images/vehicle round 7 mobile.jpg"
+                  alt="vehicle"
+                  class="md:block hidden lg:hidden h-[800px] object-cover"
+                />
+                <p
+                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[5%] left-[5%] max-sm:left-[35%] sm:text-[2rem]"
+                >
+                  Stratosphere Blue
+                </p>
+              </div>
+            </div>
+            <div
+              class="vehicles-selected-content w-full opacity-0 absolute top-0"
+              id="vehicle-r8"
+            >
+              <div class="vehicle-content w-full h-full flex flex-col relative">
+                <img
+                  src="src/assets/images/vehicle round8.png"
+                  alt="vehicle"
+                  class="w-full object-contain md:hidden lg:block max-md:h-[300px]"
+                />
+                <img
+                  src="src/assets/images/vehicle round 8 mobile.jpg"
+                  alt="vehicle"
+                  class="md:block hidden lg:hidden h-[800px] object-cover"
+                />
+                <p
+                  class="text-white text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[5%] left-[5%] max-sm:left-[35%] sm:text-[2rem]"
+                >
+                  Deep Black
+                </p>
+              </div>
+            </div>
+            <div
+              class="vehicles-selected-content w-full opacity-0 absolute top-0"
+              id="vehicle-r9"
+            >
+              <div class="vehicle-content w-full h-full flex flex-col relative">
+                <img
+                  src="src/assets/images/vehicle round9.png"
+                  alt="vehicle"
+                  class="w-full object-contain md:hidden lg:block max-md:h-[300px]"
+                />
+                <img
+                  src="src/assets/images/vehicle round 9 mobile.jpg"
+                  alt="vehicle"
+                  class="md:block hidden lg:hidden h-[800px] object-cover"
+                />
+                <p
+                  class="text-black text-[1rem] font-light ml-[5rem] max-md:ml-[0] absolute bottom-[5%] left-[5%] max-sm:left-[35%] sm:text-[2rem]"
+                >
+                  Cloud White
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          class="button-content my-0 mx-auto flex flex-col gap-6 justify-center items-center mt-[5rem]"
+      </div>
+      <div
+        class="button-content my-0 mx-auto flex flex-col gap-6 justify-center items-center mt-[30rem]"
+      >
+        <p>More EC6 Moments</p>
+        <button
+          class="header-button text-black border-2 border-black px-4 py-2 text-[1rem] hover:bg-black hover:text-white transition-all max-md:text-sm max-sm:px-4 max-sm:py-2"
         >
-          <p>More EC6 Moments</p>
-          <button
-            class="header-button text-black border-2 border-black px-4 py-2 text-[1rem] hover:bg-black hover:text-white transition-all max-md:text-sm max-sm:px-4 max-sm:py-2"
-          >
-            Check Gallery
-          </button>
-        </div>
+          Check Gallery
+        </button>
       </div>
     </section>
-    <section class="section-5 w-full h-full mt-[5rem] relative">
+    <section class="section-5 w-full h-full relative m-0">
       <div class="section-5-container">
         <img
           src="src/assets/images/interior-intro-hero-desktop.jpg"
@@ -556,7 +621,7 @@
         </div>
       </div>
     </section>
-    <section class="section-6 max-w-full h-full relative mt-[5rem]">
+    <!-- <section class="section-6 max-w-full h-full relative mt-[5rem]">
       <div
         class="section-6-container w-[1200px] h-full my-0 mx-auto max-md:w-[100%]"
       >
@@ -621,7 +686,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="section-7 w-full h-[100vh] bg-creamBg mt-[8rem]">
       <div class="section-7-container">
         <img src="" alt="" class="pagination-container" />
